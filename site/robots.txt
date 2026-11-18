@@ -1,4 +1,3 @@
-# auto-deploy test edit 2026-11-18
 User-agent: *
 Allow: /
 Sitemap: https://trpgphysics.org/sitemap.xml
