@@ -1,0 +1,13 @@
+Copyright (c) 2026 Matthew Gelfman and Melissa Behrends-Gelfman. All rights reserved.
+
+Dynamic Relational Transitioning Geometry (TRPG): the text, paper, full working
+record and site design are copyright Matthew Gelfman and Melissa Behrends-Gelfman.
+Reasonable quotation with credit is welcome. Ask permission before republishing
+whole documents.
+
+The code and data in downloads/ and assets/validation.js (.py, .js, .json, .csv,
+.xlsx and the code archives) are released under the MIT License, copyright (c) 2026
+Matthew Gelfman and Melissa Behrends-Gelfman; see copyright.html for the full text.
+
+First published at https://trpgphysics.org on 14 November 2026.
+Checksums: downloads/SHA256SUMS.txt and downloads/SHA256SUMS_2026-11-14_updated.txt

@@ -1,0 +1,722 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Inputs and predictions | TRPG Physics</title>
+<meta name="description" content="Every TRPG quantity labelled as input, fitted, derived or predicted, with the measurements that would show the framework false.">
+<meta name="author" content="Matthew Gelfman and Melissa Behrends-Gelfman">
+<meta name="copyright" content="&copy; 2026 Matthew Gelfman and Melissa Behrends-Gelfman">
+<meta name="theme-color" content="#0E1B2C">
+<meta property="og:title" content="Inputs and predictions | TRPG Physics">
+<meta property="og:description" content="Every TRPG quantity labelled as input, fitted, derived or predicted, with the measurements that would show the framework false.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://trpgphysics.org/ledger.html">
+<link rel="canonical" href="https://trpgphysics.org/ledger.html">
+<link rel="icon" href="assets/trpg-mark.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/trpg-site.css?v=rev10">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site">
+  <div class="wrap bar">
+    <a class="brand" href="index.html"><img src="assets/trpg-mark.svg" alt="" width="32" height="32"><span>TRPG Physics<small>Dynamic Relational Transitioning Geometry</small></span></a>
+    <input type="checkbox" id="navtoggle" class="navtoggle" aria-label="Open the menu">
+    <label class="menu" for="navtoggle">Menu</label>
+    <nav id="nav" aria-label="Main"><a href="physics.html">Physics</a><a href="problems.html">Problems</a><a href="geometry.html">Geometry</a><a href="story.html">Story</a><a href="theory.html">Framework</a><a href="equation.html">Equations</a><a href="math.html">Mathematics</a><a href="validation.html">Validation</a><a href="results.html">Results</a><a href="paper.html">Paper</a><a href="theories.html">Theories</a><a href="about.html">About</a><a class="pill" href="young.html">For young readers</a></nav>
+  </div>
+</header>
+<section class="masthead"><div class="wrap"><p class="meta mast-meta">Results, Version 1.3.3, 18 November 2026</p><h1>Inputs and predictions</h1><p class="lede">What the framework takes from measurement, what it chose with today's data in view, what it derives, what it predicts, and the measurements that would show it false.</p></div></section>
+<main id="main" class="wrap">
+<p><em>Version 1.3.3, 18 November 2026 (values recalibrated to PDG 2026 and JUNO 2026 by <a href="https://github.com/NubbyNubkins/TRPG-Unified-Framework/blob/main/analysis/recalibrate_to_2026_values_2026-11-18.py">recalibrate_to_2026_values_2026-11-18.py</a>). <code>python analysis/input_ledger_2026-11-18.py</code> reruns the count and the break tests for the results that move it (tau mass, down quark, lightest neutrino mass, Higgs mass), plus the strong-force strength and the JUNO lead. It does not re-check the other derived rows. Those are standard results or come from the scripts named in the paper and the README (for example <a href="https://github.com/NubbyNubkins/TRPG-Unified-Framework/blob/main/analysis/pairing_gap_scan_2026-11-14.py">pairing_gap_scan_2026-11-14.py</a> for the pairing gap and <a href="https://github.com/NubbyNubkins/TRPG-Unified-Framework/blob/main/analysis/neutrino_perspectives_2026-11-14.py">neutrino_perspectives_2026-11-14.py</a> for θ₁₂ and the CP phase).</em></p>
+<p>This page answers the first three questions a careful reader asks of any unified theory. What was taken from measurement? What was chosen with today’s data in view? And what does the framework say that has not been measured yet? Every quantity appears once, with one label. Nothing is counted as established until its measurement returns.</p>
+<p><strong>Labels.</strong> <strong>Input</strong>: taken from measurement. <strong>Fitted</strong>: a choice made with today’s data in view. <strong>Derived</strong>: follows from the rules plus inputs, and agrees with a measurement already made. <strong>Predicted</strong>: follows from the rules plus inputs, but the measurement that decides it has not returned. It is not 100% until that measurement returns. <strong>Lead</strong>: a promising relation with a named missing rule. It is not part of the core. <strong>Effective</strong>: an effective number of known physics (like the constants of the nuclear-mass formula), counted on neither side.</p>
+<p>The last column asks whether the result is <strong>unique to TRPG</strong>. “Shared” means another published idea gives the same number, and that idea is credited.</p>
+<hr />
+<h2>1. The headline prediction: neutrino masses</h2>
+<p>If one number decides TRPG first, it is this one.</p>
+<div class="tablewrap"><table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th>TRPG</th>
+<th>Status today</th>
+<th>Decided by</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Ordering</td>
+<td><strong>normal</strong></td>
+<td>weakly preferred by data</td>
+<td>JUNO (3σ expected after about 6.5 years of running, early 2030s), with DUNE and Hyper-Kamiokande</td>
+</tr>
+<tr class="even">
+<td>Masses</td>
+<td><strong>m₁ = 0.36 meV, m₂ = 8.6 to 8.7 meV, m₃ = 50.1 to 50.3 meV</strong> (JUNO 2026 splittings to the NuFIT 6.0 global fit)</td>
+<td>not measured</td>
+<td>cosmology and JUNO together</td>
+</tr>
+<tr class="odd">
+<td>Sum</td>
+<td><strong>0.0591 to 0.0594 eV</strong></td>
+<td>below the cosmological limit (DESI 2025: under about 0.064 eV)</td>
+<td>DESI final data, Euclid, next-generation CMB</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Where it comes from.</strong> The 45° rule that gives the tau mass, applied to the neutrinos with one negative root, plus the two measured mass splittings. Nothing else enters.</p>
+<p><strong>Credit and uniqueness.</strong> The same relation for neutrinos was proposed by Brannen (2006), building on Koide (1983). TRPG supplies a reason for it, the family symmetry together with maximum uncertainty between self and relationship, but not a different number. So this test cannot single out TRPG from Brannen’s proposal. It can falsify both.</p>
+<p><strong>TRPG is false if</strong> neutrinos turn out to have inverted ordering, or the mass sum is measured clearly different from 0.059 eV (any value the measurement excludes 0.0591–0.0594 eV at 3σ).</p>
+<p><strong>A companion test (a lead, under strain).</strong> If the middle-to-heaviest mass ratio is exactly 3 − 2√2, the small splitting must be 7.37 ± 0.08 × 10⁻⁵ eV² with JUNO’s large splitting (2.509 × 10⁻³ eV²). Up to v1.2.2 this read 7.40 ± 0.06, from the global fit’s large splitting (2.519 × 10⁻³); the relation has no free number and only that input changed (v1.3.2). JUNO’s 2026 result, 7.388 ± 0.078, lies within 0.2σ of both, so the change gained nothing. The ratio (the midpoint of a side of the mass triangle) was proposed when the measured mass ratio was already known, so it is a hint found after the fact. This relation is not part of the core, and it is listed here because it will be decided first.</p>
+<hr />
+<h2>2. The count of inputs</h2>
+<p>Counted like for like, the Standard Model with gravity and cosmology takes <strong>34</strong> free numbers: 3 force strengths, the Higgs value and mass (2), 9 charged-fermion masses, 4 quark-mixing numbers, the strong-CP angle, 3 neutrino masses, 6 neutrino mixing numbers, gravity’s strength, dark energy, the dark matter amount, the matter excess, and 2 numbers for the seeds of galaxies.</p>
+<p>TRPG removes six of these, two already confirmed and four waiting for a measurement:</p>
+<div class="tablewrap"><table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Removed</th>
+<th>How</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Tau mass</td>
+<td>45° rule for leptons (Koide, 1983)</td>
+<td><strong>confirmed</strong>: 1776.969 MeV vs 1776.93 ± 0.09 (+0.4σ)</td>
+</tr>
+<tr class="even">
+<td>Down-quark mass</td>
+<td>Cabibbo relation (Gatto, Sartori and Tonin, 1968): strange-to-down mass ratio 19.9 vs 19.8 ± 0.3 from the PDG 2026 masses (sine form; the tangent form fails)</td>
+<td><strong>confirmed</strong> (+0.3σ)</td>
+</tr>
+<tr class="odd">
+<td>Higgs mass</td>
+<td>Self-coupling zero at the grain of space (Shaposhnikov and Wetterich, 2010), with the far-side states</td>
+<td><strong>pending</strong>, and under strain: it needs a top mass 3.7σ below today’s (PDG 2026), and its pass rests on a 0.5 GeV allowance for the top mass’s meaning</td>
+</tr>
+<tr class="even">
+<td>Lightest neutrino mass</td>
+<td>45° rule with one negative root (Brannen, 2006)</td>
+<td><strong>pending</strong> (Section 1)</td>
+</tr>
+<tr class="odd">
+<td>θ₁₂ given θ₁₃</td>
+<td>TM1 mixing pattern (Xing and Zhou, 2007; Albright and Rodejohann, 2009)</td>
+<td><strong>pending</strong>; 2.3σ from JUNO 2026 (fails at 3σ)</td>
+</tr>
+<tr class="even">
+<td>Neutrino CP phase</td>
+<td>TM1 read as perspectives</td>
+<td><strong>pending</strong>; today’s fits lean to 180–215°, against TRPG’s 253–292°</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The honest count:</strong></p>
+<ul>
+<li><strong>32 free numbers today</strong>, counting only savings that measurement has already confirmed.</li>
+<li><strong>28 if every pending measurement agrees.</strong> This is the figure quoted elsewhere as “about 28”. It is a ceiling on the saving, not a result.</li>
+<li><strong>27</strong> if, in addition, the strong coupling lands at 0.1178. That saving counts only once the Higgs mass also lands, because both rest on the same fitted choice of grain.</li>
+</ul>
+<p><strong>Plus six stated choices, made with today’s data in view (fitted):</strong></p>
+<ol type="1">
+<li>The grain of space is the Planck energy ÷ √2. Five equally natural readings give five factors (<a href="https://github.com/NubbyNubkins/TRPG-Unified-Framework/blob/main/analysis/derive_45_and_sqrt2_2026-11-18.py">derive_45_and_sqrt2_2026-11-18.py</a>). This choice feeds both the strong coupling and the Higgs mass.</li>
+<li>The weight rule of the far-side weak pairs (meeting energy squared ÷ grain). This is one assumption: the pairs have no direct link to the background value that weighs their coloured partners.</li>
+<li>The coloured far-side (D) states placed where the strengths cross (4.6 × 10¹³ GeV), with the three strengths taken as equal there. Above that energy they separate again; no placement makes them equal at the grain, so this is a boundary condition inside the bet, not a derivation (<a href="https://github.com/NubbyNubkins/TRPG-Unified-Framework/blob/main/analysis/crossing_vs_grain_2026-11-18.py">crossing_vs_grain_2026-11-18.py</a>).</li>
+<li>TM1 rather than another mixing pattern. Exact tribimaximal and TM2 are disfavoured by data.</li>
+<li>The sign pattern of the neutrino roots (−, +, +). The all-positive pattern has no solution with the measured splittings.</li>
+<li>Maximum uncertainty between self and relationship as the reason for the 45° rule. It is a starting principle, chosen knowing that Koide’s relation holds for the charged leptons, and it fails for quarks. The tau mass is therefore “derived” from a principle that was itself chosen with data in view.</li>
+</ol>
+<p><strong>Counted on neither side (effective numbers of the strong force):</strong> the containment pressure B = 60 (57–64) MeV/fm³, set from the proton and Delta masses, and the stiffness of the containment field, set from the lattice glueball mass of 1.71–1.73 GeV.</p>
+<hr />
+<h2>3. The ledger</h2>
+<h3>Inputs (taken from measurement): 28 core, plus the 4 pending items above while they are pending</h3>
+<div class="tablewrap"><table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Quantity</th>
+<th>Count</th>
+<th>Note</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Force strengths</td>
+<td>3</td>
+<td>One is saved if α_s lands at 0.1178 (see above)</td>
+</tr>
+<tr class="even">
+<td>Gravity’s strength</td>
+<td>1</td>
+<td>Tied to the force strengths at the grain; not derived</td>
+</tr>
+<tr class="odd">
+<td>Higgs value (246 GeV)</td>
+<td>1</td>
+<td>Why it settles, and at 246 GeV, is open</td>
+</tr>
+<tr class="even">
+<td>Lepton scale</td>
+<td>1</td>
+<td>The size of the lepton family</td>
+</tr>
+<tr class="odd">
+<td>Lepton twist</td>
+<td>1</td>
+<td>One number with the electron’s mass (0.222222, matches 2/9 but not derived)</td>
+</tr>
+<tr class="even">
+<td>Quark masses: up, strange, charm, bottom, top</td>
+<td>5</td>
+<td>Up is reached from the measured ratio Q (a check, not a saving)</td>
+</tr>
+<tr class="odd">
+<td>Quark mixing</td>
+<td>4</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Strong-CP angle</td>
+<td>1</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Neutrino mass splittings</td>
+<td>2</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Neutrino mixing numbers that TM1 does not fix</td>
+<td>4</td>
+<td>θ₁₃, θ₂₃ and two Majorana phases</td>
+</tr>
+<tr class="odd">
+<td>Dark energy</td>
+<td>1</td>
+<td>Read as the kept amount of space</td>
+</tr>
+<tr class="even">
+<td>Dark matter amount</td>
+<td>1</td>
+<td>Read as partly perspective, partly the majoron (a lead)</td>
+</tr>
+<tr class="odd">
+<td>Matter excess</td>
+<td>1</td>
+<td>Allowed, not predicted</td>
+</tr>
+<tr class="even">
+<td>Seeds of galaxies (size, tilt)</td>
+<td>2</td>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+<h3>Derived (agrees with a measurement already made)</h3>
+<div class="tablewrap"><table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Result</th>
+<th>TRPG</th>
+<th>Measured</th>
+<th>What it used</th>
+<th>Unique to TRPG?</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Tau mass</td>
+<td>1776.969 MeV</td>
+<td>1776.93 ± 0.09</td>
+<td>e and μ masses, 45° rule (whose principle is fitted choice 6)</td>
+<td>Shared: Koide (1983). TRPG adds the reason</td>
+</tr>
+<tr class="even">
+<td>Electron, muon, tau together</td>
+<td>3 masses</td>
+<td>0.003%</td>
+<td><strong>two</strong> numbers (scale and twist) plus the 45° rule</td>
+<td>Shared (Koide; Foot; Brannen)</td>
+</tr>
+<tr class="odd">
+<td>Down quark (strange-to-down mass ratio)</td>
+<td>19.9</td>
+<td>19.8 ± 0.3 (PDG 2026 masses)</td>
+<td>Cabibbo angle, strange mass</td>
+<td>Shared: Gatto, Sartori and Tonin (1968). One relation, counted once: it is the same relation as “Cabibbo angle from the masses”</td>
+</tr>
+<tr class="even">
+<td>Up quark</td>
+<td>2.03 MeV</td>
+<td>2.16 ± 0.07</td>
+<td>Cabibbo relation and the measured Q from η → 3π</td>
+<td>Shared: Leutwyler (1996). A check, not a saving</td>
+</tr>
+<tr class="odd">
+<td>Which forces exist (12 carriers, 8 + 3 + 1)</td>
+<td>theorem</td>
+<td>as observed</td>
+<td>the perspective principle</td>
+<td>Shared mathematics: Günaydin and Gürsey (1973); Todorov and Dubois-Violette (2018); Krasnov (2019). TRPG’s reading of the matrix as one perspective is its own</td>
+</tr>
+<tr class="even">
+<td>Charges of a whole generation</td>
+<td>exact</td>
+<td>as observed</td>
+<td>the three-way reading of the matrix (stated, not derived)</td>
+<td>Partly: anomaly cancellation is standard</td>
+</tr>
+<tr class="odd">
+<td>One-handed matter, no mirror particles</td>
+<td>exact</td>
+<td>as observed</td>
+<td>the no-gaps rule applied to spin (stated reading)</td>
+<td>TRPG’s reading</td>
+</tr>
+<tr class="even">
+<td>Quark charges, given three colours</td>
+<td>+2/3, −1/3</td>
+<td>same</td>
+<td>anomaly cancellation</td>
+<td>No: standard</td>
+</tr>
+<tr class="odd">
+<td>ρ = 1</td>
+<td>exact</td>
+<td>1.0004 ± 0.0002 (with known corrections)</td>
+<td>the Higgs pair, nothing extra</td>
+<td>No: standard (Veltman, 1977)</td>
+</tr>
+<tr class="even">
+<td>Colour-neutral proton, neutral atom</td>
+<td>exact</td>
+<td>as observed</td>
+<td>facing-blind part of the matrix</td>
+<td>Reached by a second route</td>
+</tr>
+<tr class="odd">
+<td>Containment pressure B</td>
+<td>60 (57–64) MeV/fm³</td>
+<td>1975 bag fit ≈ 57</td>
+<td>proton and Delta masses</td>
+<td>Effective number; second route to the bag model</td>
+</tr>
+<tr class="even">
+<td>Light bending, radar delay</td>
+<td>1.752″</td>
+<td>1.75″</td>
+<td>measured G</td>
+<td>No: general relativity in optical form</td>
+</tr>
+<tr class="odd">
+<td>Black-hole ringdown</td>
+<td>250 Hz, 4.0 ms</td>
+<td>matches GW150914</td>
+<td>measured masses and G</td>
+<td>No: general relativity</td>
+</tr>
+<tr class="even">
+<td>Age of the universe</td>
+<td>13.79 Gyr</td>
+<td>13.79 ± 0.02</td>
+<td>measured expansion inputs</td>
+<td>No: standard cosmology from inputs</td>
+</tr>
+<tr class="odd">
+<td>Tau lifetime</td>
+<td>289.7 fs</td>
+<td>290.3 fs</td>
+<td>muon lifetime</td>
+<td>No: lepton universality</td>
+</tr>
+<tr class="even">
+<td>At least three generations</td>
+<td>theorem</td>
+<td>three seen</td>
+<td>three placements of one shape</td>
+<td>TRPG’s reading. “At most three” rests on the nothing-extra rule</td>
+</tr>
+</tbody>
+</table></div>
+<h3>Predicted (not 100% until the measurement returns)</h3>
+<div class="tablewrap"><table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Prediction</th>
+<th>TRPG</th>
+<th>Today</th>
+<th>Decided by</th>
+<th>Unique to TRPG?</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Neutrino ordering, masses, sum</strong></td>
+<td>normal; 0.36, 8.6–8.7, 50.1–50.3 meV; 0.0591–0.0594 eV</td>
+<td>consistent; JUNO 2026 favours normal ordering at 2.1σ</td>
+<td>JUNO; DESI, Euclid</td>
+<td>Shared with Brannen (2006)</td>
+</tr>
+<tr class="even">
+<td>Strong coupling at the Z</td>
+<td>0.1178</td>
+<td>0.1180 ± 0.0009 world average; 0.11873 ± 0.00056 most precise lattice (+1.7σ)</td>
+<td>lattice at about 0.3%</td>
+<td>The number depends on TRPG’s far-side states (2.4 × 10⁸ GeV); rests on the fitted grain</td>
+</tr>
+<tr class="odd">
+<td>Higgs mass from the grain</td>
+<td>127.3 ± 1.5 GeV</td>
+<td>125.13 ± 0.11 (1.4σ; 2.1σ without the top-mass allowance); needs top 171.6 vs 172.60 ± 0.27 (3.7σ)</td>
+<td>a sharper top mass</td>
+<td>No: any extra weak matter at high energy helps the same way</td>
+</tr>
+<tr class="even">
+<td>θ₁₂</td>
+<td>sin²θ₁₂ = 0.318</td>
+<td>JUNO 2026: 0.3036 ± 0.0064, so TM1 is 2.3σ high (3σ would fail it)</td>
+<td>JUNO</td>
+<td>Shared: TM1 models</td>
+</tr>
+<tr class="odd">
+<td>Neutrino CP phase</td>
+<td>253–292°</td>
+<td>fits lean to 180–215° (weak)</td>
+<td>DUNE, Hyper-Kamiokande</td>
+<td>Shared in part: TM1 models with this reading</td>
+</tr>
+<tr class="even">
+<td>Quark triangle angle γ</td>
+<td>64.1–67.6°</td>
+<td>about 65° ± 3° (consistent)</td>
+<td>LHCb, Belle II</td>
+<td>From the lead α = 90°. Shared with the right-unitarity-triangle idea (Antusch, King, Malinsky and Spinrath, 2010)</td>
+</tr>
+<tr class="odd">
+<td>First-row quark-mixing shortfall</td>
+<td>shrinks to zero</td>
+<td>about 2σ today</td>
+<td>neutron and nuclear beta decay, pion beta decay</td>
+<td>TRPG’s (no fourth generation, no extra states)</td>
+</tr>
+<tr class="even">
+<td>Quark pairing gap in compact (self-bound strange) stars</td>
+<td>4Δ² − m_s² = 1.7–2.8 × 10⁴ MeV²: about 82–97 MeV at m_s = 100 MeV, 88–109 MeV for a running m_s of 120–140 MeV</td>
+<td>not measured (theory spans 50–150)</td>
+<td>lattice and effective theory; neutron-star cooling and mergers</td>
+<td>TRPG’s, given B from the proton</td>
+</tr>
+<tr class="odd">
+<td>Neutrinoless double beta decay</td>
+<td>1.3–4.1 meV (1.8–2.3 if the Majorana phases are zero)</td>
+<td>below the limit (28–122 meV)</td>
+<td>beyond planned reach (10–20 meV)</td>
+<td>Follows from the neutrino masses above</td>
+</tr>
+<tr class="even">
+<td>Proton decay</td>
+<td>none</td>
+<td>none seen (&gt; 2.4 × 10³⁴ yr)</td>
+<td>Hyper-Kamiokande</td>
+<td>Shared with any model without coloured Higgs partners</td>
+</tr>
+<tr class="odd">
+<td>Primordial gravitational waves (majoron lead, not core)</td>
+<td>r below about 10⁻¹¹</td>
+<td>none seen</td>
+<td>Simons Observatory, LiteBIRD</td>
+<td>Follows from the majoron lead’s slow, cold start</td>
+</tr>
+<tr class="even">
+<td>Tau mass, sharper</td>
+<td>1776.969 MeV</td>
+<td>1776.93 ± 0.09</td>
+<td>Belle II, BESIII</td>
+<td>Shared: Koide</td>
+</tr>
+<tr class="odd">
+<td>Unmeasured Higgs couplings (self-couplings 191 GeV and 0.776; HHWW 0.213)</td>
+<td>as listed</td>
+<td>not measured</td>
+<td>HL-LHC, future colliders</td>
+<td>No: Standard Model values in TRPG’s form. They test bookkeeping</td>
+</tr>
+</tbody>
+</table></div>
+<h3>Leads (each with one named missing rule; not part of the core)</h3>
+<div class="tablewrap"><table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Lead</th>
+<th>What it gives</th>
+<th>What is missing</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Small neutrino splitting (m₂/m₃ = 3 − 2√2)</td>
+<td>7.37 ± 0.08 × 10⁻⁵ eV² (7.40 with the older global fit’s large splitting)</td>
+<td>a reason for the ratio; JUNO 2026 (7.388 ± 0.078) within 0.2σ</td>
+</tr>
+<tr class="even">
+<td>Majoron as dark matter</td>
+<td>a cold, chargeless wave; no X-ray line</td>
+<td>its mass and amount</td>
+</tr>
+<tr class="odd">
+<td>Matter excess</td>
+<td>allowed, through non-thermal leptogenesis</td>
+<td>one start number</td>
+</tr>
+<tr class="even">
+<td>Heavy quark masses and mixing (the fold)</td>
+<td>all three mixing angles within 19%</td>
+<td>a rule for the fold’s strength</td>
+</tr>
+<tr class="odd">
+<td>First-rung quark tilt with α = 90°</td>
+<td>largest quark tilt (−0.5σ) and γ</td>
+<td>fails one rung up</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2>4. TRPG is false if…</h2>
+<p>Each of these would break the named part. None has returned yet. Dates are the experiments’ own published expectations and may slip.</p>
+<div class="tablewrap"><table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>If this is measured</th>
+<th>It breaks</th>
+<th>Expected</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Inverted neutrino ordering</td>
+<td>the neutrino masses and the 45° rule for neutrinos</td>
+<td>JUNO, early 2030s; DUNE, Hyper-Kamiokande, 2030s</td>
+</tr>
+<tr class="even">
+<td>A neutrino mass sum that excludes 0.0591–0.0594 eV at 3σ</td>
+<td>the neutrino masses</td>
+<td>DESI final data, Euclid, late 2020s to early 2030s</td>
+</tr>
+<tr class="odd">
+<td>The small splitting more than 3σ from 7.37 ± 0.08 × 10⁻⁵ eV², JUNO’s error combined (outside about 7.13–7.62 at JUNO’s full precision)</td>
+<td>the 3 − 2√2 lead</td>
+<td>JUNO, within about 6 years</td>
+</tr>
+<tr class="even">
+<td>α_s(M_Z) more than 3σ from 0.1178 with a 0.3% lattice result</td>
+<td>the far-side weak pairs and the grain choice, and with them the closing of the force strengths</td>
+<td>lattice QCD, next few years</td>
+</tr>
+<tr class="odd">
+<td>A top pole mass that puts the Higgs rule more than 3σ off</td>
+<td>the Higgs mass from the grain</td>
+<td>LHC and HL-LHC top-mass work</td>
+</tr>
+<tr class="even">
+<td>The neutrino CP phase firmly outside 253–292°</td>
+<td>the TM1 perspective reading</td>
+<td>DUNE, Hyper-Kamiokande, 2030s</td>
+</tr>
+<tr class="odd">
+<td>sin²θ₁₂ more than 3σ from 0.318 (today 2.3σ)</td>
+<td>TM1, and with it the θ₁₂ and CP-phase savings</td>
+<td>JUNO, next few years</td>
+</tr>
+<tr class="even">
+<td>A confirmed shortfall in the first row of the quark-mixing matrix</td>
+<td>the far-side reading (D states at 4.6 × 10¹³ GeV keep the row unitary to about 10⁻²³)</td>
+<td>beta-decay and pion experiments</td>
+</tr>
+<tr class="odd">
+<td>γ firmly outside 64.1–67.6°</td>
+<td>the α = 90° lead</td>
+<td>LHCb Upgrade, Belle II</td>
+</tr>
+<tr class="even">
+<td>A quark pairing gap firmly outside the band 4Δ² − m_s² = 1.7–2.8 × 10⁴ MeV² (82–97 MeV at m_s = 100 MeV), or a compact star clearly above about 2.15 solar masses</td>
+<td>containment with B from the proton</td>
+<td>theory, timing and merger data (PSR J0952−0607 at 2.35 ± 0.17 is the case to watch)</td>
+</tr>
+<tr class="odd">
+<td>Proton decay of any kind</td>
+<td>the nothing-extra rule and the far side</td>
+<td>Hyper-Kamiokande, from about 2028</td>
+</tr>
+<tr class="even">
+<td>A fourth generation, a new force carrier, mirror families, a second Higgs pair or a coloured spin-0 particle</td>
+<td>the nothing-extra rule</td>
+<td>any collider</td>
+</tr>
+<tr class="odd">
+<td>Primordial gravitational waves</td>
+<td>the majoron dark-matter lead (not the core)</td>
+<td>Simons Observatory, LiteBIRD</td>
+</tr>
+<tr class="even">
+<td>Dark matter that feels the weak force</td>
+<td>the majoron lead</td>
+<td>direct-detection experiments</td>
+</tr>
+<tr class="odd">
+<td>Neutrinos proven to be Dirac particles</td>
+<td>the Higgs-free neutrino mass and 0νββ</td>
+<td>neutrinoless double beta decay searches</td>
+</tr>
+<tr class="even">
+<td>The tau mass measured firmly away from 1776.969 MeV</td>
+<td>the 45° rule for leptons</td>
+<td>Belle II, BESIII</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2>5. The derivation tree</h2>
+<p>Rules are at the top, measured inputs at the side, and outputs at the bottom, coloured by label.</p>
+<figure class="geo">
+<img src="assets/img/derivation_tree.png" alt="Derivation tree: the rules and the bet at the top, the steps in the middle, the outputs at the bottom, each coloured by its label; dashed lines mark where measured inputs enter." loading="lazy">
+<figcaption>
+From the rules to the outputs. Green: derived and agreeing with a measurement already made. Gold: predicted, awaiting measurement. Red: a choice made with today’s data in view.
+</figcaption>
+</figure>
+<hr />
+<h2>6. Tests set after an earlier attempt failed</h2>
+<p>An audit on 18 November 2026 asked of every test: was a number, a form or a model chosen after an earlier attempt missed? The full list is in Appendix A.6 of the paper. In short:</p>
+<div class="tablewrap"><table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Test</th>
+<th>What was chosen after the fact</th>
+<th>Consequence</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Strong coupling 0.1178</td>
+<td>the grain, best of five readings (the plain Planck energy also passed and gives 0.1196)</td>
+<td>fitted choice 1; only later measurements test it</td>
+</tr>
+<tr class="even">
+<td>Far-side weak pairs at 2.4 × 10⁸ GeV</td>
+<td>the weight rule, written after the strengths required 2.2 × 10⁸</td>
+<td>fitted choice 2</td>
+</tr>
+<tr class="odd">
+<td>Strengths equal at the crossing</td>
+<td>the boundary condition, added after equality at the grain failed</td>
+<td>fitted choice 3</td>
+</tr>
+<tr class="even">
+<td>Compact-star masses</td>
+<td>the pairing gap, introduced after the unpaired stars failed, and its band re-set as the model changed (70–90, 80–100, 82–97, 88–109 MeV)</td>
+<td>the star masses are not evidence; the gap is tested only by an independent determination</td>
+</tr>
+<tr class="odd">
+<td>Higgs mass</td>
+<td>the rule, the only rule borrowed on 17 November that set a number and passed (three others failed); its pass also rests on a 0.5 GeV top-mass allowance (2.1σ without it)</td>
+<td>pending, under strain</td>
+</tr>
+<tr class="even">
+<td>TM1 and the root signs</td>
+<td>chosen after other patterns failed</td>
+<td>fitted choices 4 and 5</td>
+</tr>
+<tr class="odd">
+<td>45° rule for leptons</td>
+<td>the principle, adopted knowing Koide’s relation</td>
+<td>fitted choice 6</td>
+</tr>
+<tr class="even">
+<td>Small neutrino splitting</td>
+<td>the ratio 3 − 2√2, proposed when the measured mass ratio was already known</td>
+<td>a hint</td>
+</tr>
+<tr class="odd">
+<td>Down quark</td>
+<td>the sine form of the Cabibbo relation (the tangent form fails at −2.7σ)</td>
+<td>a choice of form</td>
+</tr>
+<tr class="even">
+<td>Up quark</td>
+<td>the decay value of Q (0.4σ with Q’s error included; the lattice value gives 2.0σ)</td>
+<td>the check stands or falls with Q</td>
+</tr>
+</tbody>
+</table></div>
+<h2>7. What changed in this version</h2>
+<p><strong>Version 1.3.3 (18 November 2026).</strong> Values recalibrated to PDG 2026 and JUNO 2026 (<a href="https://github.com/NubbyNubkins/TRPG-Unified-Framework/blob/main/analysis/recalibrate_to_2026_values_2026-11-18.py">recalibrate_to_2026_values_2026-11-18.py</a>). The Higgs rule now needs a top mass 3.7σ below today’s (was 3.2σ), and its pass rests on the top-mass allowance. With JUNO’s splittings m₂ is 8.6 meV and the sum 0.0591 eV, so both are now given as ranges. The small splitting’s move from 7.40 to 7.37 is explained, and its fail band is now a 3σ test with both errors combined (about 7.13–7.62 at JUNO’s full precision; the older bands were one standard deviation wide). The down quark is compared with the measured masses (19.8 ± 0.3) instead of an unsourced 20.4. Section 6 above is new.</p>
+<p><strong>Version 1.2.2.</strong></p>
+<p>Nothing in the framework changed. This page gathers bookkeeping that was spread across the paper. In gathering it, four labels were tightened:</p>
+<ul>
+<li>The input count is stated as a range, <strong>32 today and 28 if every pending measurement agrees</strong>, instead of a single “about 28”.</li>
+<li>The lepton masses come from <strong>two</strong> numbers (scale and twist) plus the 45° rule, not from one.</li>
+<li>“Cabibbo angle from the masses” and “down quark from the Cabibbo angle” are <strong>one relation</strong>, counted once.</li>
+<li>The neutrino masses are <strong>shared</strong> with Brannen’s 2006 proposal, and that credit is now stated beside them.</li>
+</ul>
+
+</main>
+<footer class="site">
+  <div class="wrap">
+    <div class="fcols">
+      <div class="fbrand"><a class="brand" href="index.html"><img src="assets/trpg-mark.svg" alt="" width="32" height="32"><span>TRPG Physics</span></a>
+      <p>A relational, entanglement-based account of known physics, by Matthew Gelfman and Melissa Behrends-Gelfman.</p>
+      <p>The framework builds on the work of the physicists cited on the <a href="credits.html">References</a> page.</p></div>
+      <div><h4>Research</h4><ul><li><a href="theory.html">Framework</a></li><li><a href="equation.html">Equations explained</a></li><li><a href="proofs.html">Every equation, start to finish</a></li><li><a href="math.html">Mathematics</a></li><li><a href="results.html">Results</a></li></ul></div><div><h4>Tools</h4><ul><li><a href="validation.html">Validation lab</a></li><li><a href="data.html">Data &amp; code</a></li><li><a href="code.html">Source code</a></li><li><a href="paper.html">The paper</a></li></ul></div><div><h4>Learn</h4><ul><li><a href="story.html">The story of the universe</a></li><li><a href="theories.html">Theories of everything</a></li><li><a href="compare.html">Compare the theories</a></li><li><a href="physics.html">All of physics, from the beginning</a></li><li><a href="problems.html">The problems solved</a></li><li><a href="geometry.html">The geometry, in pictures</a></li><li><a href="young.html">For young readers</a></li><li><a href="credits.html">Credits</a></li></ul></div><div><h4>About</h4><ul><li><a href="about.html">The authors</a></li><li><a href="publications.html">Publications</a></li><li><a href="copyright.html">Copyright &amp; license</a></li></ul></div>
+    </div>
+    <div class="fbase"><span>&copy; 2026 Matthew Gelfman and Melissa Behrends-Gelfman. Code and data are released under the MIT License.</span><span>First published at trpgphysics.org on 14 November 2026.</span></div>
+  </div>
+</footer>
+
+</body>
+</html>
