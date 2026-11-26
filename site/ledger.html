@@ -26,9 +26,9 @@
     <nav id="nav" aria-label="Main"><a href="physics.html">Physics</a><a href="problems.html">Problems</a><a href="geometry.html">Geometry</a><a href="story.html">Story</a><a href="theory.html">Framework</a><a href="equation.html">Equations</a><a href="math.html">Mathematics</a><a href="validation.html">Validation</a><a href="results.html">Results</a><a href="paper.html">Paper</a><a href="theories.html">Theories</a><a href="about.html">About</a><a class="pill" href="young.html">For young readers</a></nav>
   </div>
 </header>
-<section class="masthead"><div class="wrap"><p class="meta mast-meta">Results, Version 1.3.3, 18 November 2026</p><h1>Inputs and predictions</h1><p class="lede">What the framework takes from measurement, what it chose with today's data in view, what it derives, what it predicts, and the measurements that would show it false.</p></div></section>
+<section class="masthead"><div class="wrap"><p class="meta mast-meta">Results, Version 1.4.0, 25 November 2026</p><h1>Inputs and predictions</h1><p class="lede">What the framework takes from measurement, what it chose with today's data in view, what it derives, what it predicts, and the measurements that would show it false.</p></div></section>
 <main id="main" class="wrap">
-<p><em>Version 1.3.3, 18 November 2026 (values recalibrated to PDG 2026 and JUNO 2026 by <a href="https://github.com/NubbyNubkins/TRPG-Unified-Framework/blob/main/analysis/recalibrate_to_2026_values_2026-11-18.py">recalibrate_to_2026_values_2026-11-18.py</a>). <code>python analysis/input_ledger_2026-11-18.py</code> reruns the count and the break tests for the results that move it (tau mass, down quark, lightest neutrino mass, Higgs mass), plus the strong-force strength and the JUNO lead. It does not re-check the other derived rows. Those are standard results or come from the scripts named in the paper and the README (for example <a href="https://github.com/NubbyNubkins/TRPG-Unified-Framework/blob/main/analysis/pairing_gap_scan_2026-11-14.py">pairing_gap_scan_2026-11-14.py</a> for the pairing gap and <a href="https://github.com/NubbyNubkins/TRPG-Unified-Framework/blob/main/analysis/neutrino_perspectives_2026-11-14.py">neutrino_perspectives_2026-11-14.py</a> for θ₁₂ and the CP phase).</em></p>
+<p><em>Version 1.4.0, 25 November 2026 (no value changed from 1.3.3; values recalibrated to PDG 2026 and JUNO 2026 by <a href="https://github.com/NubbyNubkins/TRPG-Unified-Framework/blob/main/analysis/recalibrate_to_2026_values_2026-11-18.py">recalibrate_to_2026_values_2026-11-18.py</a>). <code>python analysis/input_ledger_2026-11-18.py</code> reruns the count and the break tests for the results that move it (tau mass, down quark, lightest neutrino mass, Higgs mass), plus the strong-force strength and the JUNO lead. It does not re-check the other derived rows. Those are standard results or come from the scripts named in the paper and the README (for example <a href="https://github.com/NubbyNubkins/TRPG-Unified-Framework/blob/main/analysis/pairing_gap_scan_2026-11-14.py">pairing_gap_scan_2026-11-14.py</a> for the pairing gap and <a href="https://github.com/NubbyNubkins/TRPG-Unified-Framework/blob/main/analysis/neutrino_perspectives_2026-11-14.py">neutrino_perspectives_2026-11-14.py</a> for θ₁₂ and the CP phase).</em></p>
 <p>This page answers the first three questions a careful reader asks of any unified theory. What was taken from measurement? What was chosen with today’s data in view? And what does the framework say that has not been measured yet? Every quantity appears once, with one label. Nothing is counted as established until its measurement returns.</p>
 <p><strong>Labels.</strong> <strong>Input</strong>: taken from measurement. <strong>Fitted</strong>: a choice made with today’s data in view. <strong>Derived</strong>: follows from the rules plus inputs, and agrees with a measurement already made. <strong>Predicted</strong>: follows from the rules plus inputs, but the measurement that decides it has not returned. It is not 100% until that measurement returns. <strong>Lead</strong>: a promising relation with a named missing rule. It is not part of the core. <strong>Effective</strong>: an effective number of known physics (like the constants of the nuclear-mass formula), counted on neither side.</p>
 <p>The last column asks whether the result is <strong>unique to TRPG</strong>. “Shared” means another published idea gives the same number, and that idea is credited.</p>
@@ -515,6 +515,11 @@
 <td>largest quark tilt (−0.5σ) and γ</td>
 <td>fails one rung up</td>
 </tr>
+<tr class="even">
+<td>Exact right-angled triangle (λ = 1/√20, A = √(2/3), β = 22.5°, γ = 67.5°)</td>
+<td>all seven directly measured mixing quantities within 1.6σ (χ² = 6.0 for 7); sin 2β = 1/√2; |V<sub>ud</sub>| = 0.97467 (+3.1σ, the first-row bet)</td>
+<td>the four numbers are chosen, not derived</td>
+</tr>
 </tbody>
 </table></div>
 <hr />
@@ -694,7 +699,68 @@ From the rules to the outputs. Green: derived and agreeing with a measurement al
 </tr>
 </tbody>
 </table></div>
+<h2 id="a.-tests-run-after-18-november-2026-that-failed">6a. Tests run after 18 November 2026 that failed</h2>
+<p>Rechecked with independent code (<a href="https://github.com/NubbyNubkins/TRPG-Unified-Framework/blob/main/analysis/farside_charge_rule_2026-11-25.py"><code>analysis/farside_charge_rule_2026-11-25.py</code></a>, <a href="https://github.com/NubbyNubkins/TRPG-Unified-Framework/blob/main/analysis/quark_triangle_and_press_2026-11-25.py"><code>analysis/quark_triangle_and_press_2026-11-25.py</code></a>, <a href="https://github.com/NubbyNubkins/TRPG-Unified-Framework/blob/main/analysis/cfl_gap_and_tides_2026-11-25.py"><code>analysis/cfl_gap_and_tides_2026-11-25.py</code></a>, <a href="https://github.com/NubbyNubkins/TRPG-Unified-Framework/blob/main/analysis/refinement_checks_2026-11-25.py"><code>analysis/refinement_checks_2026-11-25.py</code></a>). The same recheck confirmed the pairing-gap band of the ledger above: at B = 60.1 MeV/fm³ the heaviest star is 2.00–2.13 solar masses and Λ₁.₄ = 459–575. None is part of the framework. The full list is Appendix A.7 of the paper.</p>
+<div class="tablewrap"><table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>Test</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Six-step (ℤ₆) charge giving the far-side weight rule</td>
+<td>gives 2.45 × 10⁸ GeV, but is anomalous (colour and weak sums 3 and 15); no ℤ_N up to N = 18 works; the weight rule stays fitted choice 2</td>
+</tr>
+<tr>
+<td>Three generations from that charge</td>
+<td>no number from one to five passes; six passes but ends asymptotic freedom</td>
+</tr>
+<tr>
+<td>Walls removed by gravity at Φ⁵</td>
+<td>the timing works, but a charge broken by gravity protects nothing</td>
+</tr>
+<tr>
+<td>Very light majoron dark matter without inflation (f = 2.1 × 10¹⁶ GeV)</td>
+<td>one starting angle cannot be chosen without inflation; needs gravity breaking near the 37th power; supermassive black hole spins largely exclude the mass range</td>
+</tr>
+<tr>
+<td>Pairing gap 90–125 MeV</td>
+<td>Λ₁.₄ = 652–1124, above GW170817’s 580; the two-family picture is Drago, Lavagno and Pagliara (2014)</td>
+</tr>
+<tr>
+<td>Matter excess with the Dirac link aligned to the neutrinos</td>
+<td>decay asymmetry vanishes; rests on a hand-set starting rotation</td>
+</tr>
+<tr>
+<td>Dark energy ρ = B<sup>3/2</sup> / [3 (16π²)² M²]</td>
+<td>2.13–2.23 meV, but the closest of ten forms tried</td>
+</tr>
+<tr>
+<td>3 × 3 down-quark matrix with set weights</td>
+<td>χ² = 11.5 (26 at the Z mass)</td>
+</tr>
+<tr>
+<td>Simple fractions for the seeds’ tilt</td>
+<td>no equation behind them</td>
+</tr>
+<tr>
+<td>Higgs mass as 246/2 (self-coupling 1/8)</td>
+<td>the self-coupling is 1/8 near 182 GeV, not at v (0.1192 there); 1/8 at v needs m_H = 127.9 GeV</td>
+</tr>
+<tr>
+<td>Integer loop rungs ln(m_wall/m)/ln(16π²)</td>
+<td>random masses cluster as well 81% of the time</td>
+</tr>
+</tbody>
+</table></div>
 <h2>7. What changed in this version</h2>
+<p><strong>Version 1.4.0 (25 November 2026).</strong> The framework is restated as five rules and one bet: one matrix of relationships read in three roles (held states on the diagonal, pulls as links between them, the Higgs as the link across each state, and space and time as the geometry of the relationships); balance of pull and resistance; maximum uncertainty for the leptons; nothing extra; and a smooth start. A short stretching driven by the stiffness of space (Starobinsky, 1980) is kept as the alternative start: it predicts r = 0.0040 ± 0.0003 and n_s = 0.963, which agrees with the CMB alone but is 3.2–4.2σ low once DESI is combined, so the main line follows the combined data and keeps the tilt as a measured input. With the alternative the count would be 33 today and seven choices (the far-side decay coupling and ξ); on the main line it stays 32 and six. Also added: the exact right-angled quark triangle as a lead (row above), a tested charge rule for the far-side weight that does not hold, Section 6a, and in the paper Appendix A.8, where each open problem stands. No particle-physics number changed.</p>
 <p><strong>Version 1.3.3 (18 November 2026).</strong> Values recalibrated to PDG 2026 and JUNO 2026 (<a href="https://github.com/NubbyNubkins/TRPG-Unified-Framework/blob/main/analysis/recalibrate_to_2026_values_2026-11-18.py">recalibrate_to_2026_values_2026-11-18.py</a>). The Higgs rule now needs a top mass 3.7σ below today’s (was 3.2σ), and its pass rests on the top-mass allowance. With JUNO’s splittings m₂ is 8.6 meV and the sum 0.0591 eV, so both are now given as ranges. The small splitting’s move from 7.40 to 7.37 is explained, and its fail band is now a 3σ test with both errors combined (about 7.13–7.62 at JUNO’s full precision; the older bands were one standard deviation wide). The down quark is compared with the measured masses (19.8 ± 0.3) instead of an unsourced 20.4. Section 6 above is new.</p>
 <p><strong>Version 1.2.2.</strong></p>
 <p>Nothing in the framework changed. This page gathers bookkeeping that was spread across the paper. In gathering it, four labels were tightened:</p>
